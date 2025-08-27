@@ -72,6 +72,52 @@ class _LoginScreenState extends State<LoginScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 const SizedBox(height: 40),
+                Center(
+                  child: Container(
+                    padding: const EdgeInsets.all(24),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 100,
+                          height: 100,
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).primaryColor,
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Theme.of(context).primaryColor.withOpacity(0.3),
+                                blurRadius: 12,
+                                offset: const Offset(0, 4),
+                              ),
+                            ],
+                          ),
+                          child: const Icon(
+                            Icons.content_cut,
+                            color: Colors.white,
+                            size: 48,
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        Text(
+                          'Barbearia',
+                          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                            color: const Color(0xFFFFD700), // Cor amarela dourada
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                offset: const Offset(1.0, 1.0),
+                                blurRadius: 3.0,
+                                color: Colors.black.withOpacity(0.3),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 24),
                 Text(
                   'Bem-vindo de volta!',
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(

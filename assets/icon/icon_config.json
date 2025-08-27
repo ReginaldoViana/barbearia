@@ -1,0 +1,11 @@
+{
+    "type": "icon",
+    "size": "1024x1024",
+    "background": "#1A1A2E",
+    "content": {
+        "text": "BARBEARIA",
+        "color": "#FFD700",
+        "icon": "content_cut",
+        "icon_color": "#FFFFFF"
+    }
+}
